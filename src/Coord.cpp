@@ -95,5 +95,28 @@ Coord Coord::getRight(int offset) const
 
 Coord::Vec Coord::getOrthogonal() const
 {
-    return { getUp(1), getRight(1), getDown(1), getLeft(1) };
+    return {
+        getUp   (1),
+        getRight(1),
+        getDown (1),
+        getLeft (1)
+    };
+}
+
+Coord::Vec Coord::getSurrounding() const
+{
+    return {
+        getUp(1),
+        getUp(1).getRight(1),
+
+        getRight(1),
+
+        getDown(1).getRight(1),
+        getDown(1),
+        getDown(1).getLeft(1),
+
+        getLeft(1),
+
+        getUp(1).getLeft(1)
+    };
 }

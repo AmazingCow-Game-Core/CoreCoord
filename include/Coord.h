@@ -109,6 +109,10 @@ public:
     ///@returns
     ///@see
     Vec getOrthogonal() const;
+    ///@brief
+    ///@returns
+    ///@see
+    Vec getSurrounding() const;
 
     // iVars //
 public:
