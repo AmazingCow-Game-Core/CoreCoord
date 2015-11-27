@@ -105,13 +105,14 @@ public:
     ///than this coord.
     Coord getRight(int offset) const;
 
-    ///@brief
-    ///@returns
-    ///@see
+    ///@brief Gets a the orthogonal coords.
+    ///@returns a vector of coords starting from top going clockwise.
+    ///@see Coord::getSurrounding.
     Vec getOrthogonal() const;
-    ///@brief
-    ///@returns
-    ///@see
+    
+    ///@brief Gets a the surrounding coords.
+    ///@returns a vector of coords starting from top going clockwise.
+    ///@see Coord::getSurrounding.
     Vec getSurrounding() const;
 
     // iVars //
