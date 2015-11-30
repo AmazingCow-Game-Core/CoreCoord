@@ -85,25 +85,25 @@ public:
     ///@param offset How many times it will be on top.
     ///@returns A coord that have the y coordinate "offset" times less
     ///than this coord.
-    Coord getUp(int offset) const;
+    Coord getUp(int offset = 1) const;
 
     ///@brief Gets a Coord that is bottom of this coord.
     ///@param offset How many times it will be on bottom.
     ///@returns A coord that have the y coordinate "offset" times more
     ///than this coord.
-    Coord getDown(int offset) const;
+    Coord getDown(int offset = 1) const;
 
     ///@brief Gets a Coord that is on left of this coord.
     ///@param offset How many times it will be on left.
     ///@returns A coord that have the x coordinate "offset" times less
     ///than this coord.
-    Coord getLeft(int offset) const;
+    Coord getLeft(int offset = 1) const;
 
     ///@brief Gets a Coord that is on right of this coord.
     ///@param offset How many times it will be on right.
     ///@returns A coord that have the x coordinate "offset" times more
     ///than this coord.
-    Coord getRight(int offset) const;
+    Coord getRight(int offset = 1) const;
 
     ///@brief Gets a the orthogonal coords.
     ///@returns a vector of coords starting from top going clockwise.

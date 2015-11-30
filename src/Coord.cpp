@@ -76,19 +76,19 @@ Coord::Coord(int _y /* = 0 */, int _x /* = 0 */) :
 }
 
 // Static Methods //
-Coord Coord::getUp(int offset) const
+Coord Coord::getUp(int offset /* = 1 */) const
 {
     return Coord(this->y - offset, this->x);
 }
-Coord Coord::getDown(int offset) const
+Coord Coord::getDown(int offset /* = 1 */) const
 {
     return Coord(this->y + offset, this->x);
 }
-Coord Coord::getLeft(int offset) const
+Coord Coord::getLeft(int offset /* = 1 */) const
 {
     return Coord(this->y, this->x - offset);
 }
-Coord Coord::getRight(int offset) const
+Coord Coord::getRight(int offset /* = 1 */) const
 {
     return Coord(this->y, this->x + offset);
 }
@@ -96,27 +96,27 @@ Coord Coord::getRight(int offset) const
 Coord::Vec Coord::getOrthogonal() const
 {
     return {
-        getUp   (1),
-        getRight(1),
-        getDown (1),
-        getLeft (1)
+        getUp   (),
+        getRight(),
+        getDown (),
+        getLeft ()
     };
 }
 
 Coord::Vec Coord::getSurrounding() const
 {
     return {
-        getUp(1),
-        getUp(1).getRight(1),
+        getUp(),
+        getUp().getRight(),
 
-        getRight(1),
+        getRight(),
 
-        getDown(1).getRight(1),
-        getDown(1),
-        getDown(1).getLeft(1),
+        getDown().getRight(),
+        getDown(),
+        getDown().getLeft(),
 
-        getLeft(1),
+        getLeft(),
 
-        getUp(1).getLeft(1)
+        getUp().getLeft()
     };
 }

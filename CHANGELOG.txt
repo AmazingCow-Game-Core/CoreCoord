@@ -5,3 +5,7 @@ v0.2.1 - ????
 v0.2.2 - [Nov 30 2015]
     - Change the name of project into header comments.
     - Add the info files.
+
+v0.2.3 - [Nov 30 2015]
+    - Make the getLeft, getRight, getUp and getDown methods 
+      have the offset = 1 as default.
