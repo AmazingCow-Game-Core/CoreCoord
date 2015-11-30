@@ -93,6 +93,12 @@ Coord Coord::getRight(int offset /* = 1 */) const
     return Coord(this->y, this->x + offset);
 }
 
+Coord Coord::getMiddle(const Coord &coord1, const Coord &coord2)
+{
+    return Coord((coord1.y + coord2.y) / 2,
+                 (coord1.x + coord2.x) / 2);
+}
+
 Coord::Vec Coord::getOrthogonal() const
 {
     return {

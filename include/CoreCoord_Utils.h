@@ -55,6 +55,6 @@
 #define COW_CORECOORD_VERSION_MINOR    "2"
 #define COW_CORECOORD_VERSION_REVISION "3"
 
-#define COW_CORECOORD_VERSION "0.2.3"
+#define COW_CORECOORD_VERSION "0.2.4"
 
 #endif // defined(__CoreCoord_include_CoreCoord_Utils_h__) //
