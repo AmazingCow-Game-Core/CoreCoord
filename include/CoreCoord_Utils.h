@@ -4,7 +4,7 @@
 //             ██        ██                                                   //
 //            ███  █  █  ███                                                  //
 //            █ █        █ █        CoreCoord.h                               //
-//             ████████████         CoordCore                                 //
+//             ████████████         CoreCoord                                 //
 //           █              █       Copyright (c) 2015 AmazingCow             //
 //          █     █    █     █      www.AmazingCow.com                        //
 //          █     █    █     █                                                //
@@ -53,8 +53,8 @@
 //The core version number.
 #define COW_CORECOORD_VERSION_MAJOR    "0"
 #define COW_CORECOORD_VERSION_MINOR    "2"
-#define COW_CORECOORD_VERSION_REVISION "1"
+#define COW_CORECOORD_VERSION_REVISION "2"
 
-#define COW_CORECOORD_VERSION "0.2.1"
+#define COW_CORECOORD_VERSION "0.2.2"
 
 #endif // defined(__CoreCoord_include_CoreCoord_Utils_h__) //

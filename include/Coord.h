@@ -4,7 +4,7 @@
 //             ██        ██                                                   //
 //            ███  █  █  ███                                                  //
 //            █ █        █ █        Coord.h                                   //
-//             ████████████         CoordCore                                 //
+//             ████████████         CoreCoord                                 //
 //           █              █       Copyright (c) 2015 AmazingCow             //
 //          █     █    █     █      www.AmazingCow.com                        //
 //          █     █    █     █                                                //
@@ -45,7 +45,7 @@
 //std
 #include <ostream>
 #include <vector>
-//CoreCoord.
+//CoreCoord
 #include "CoreCoord_Utils.h"
 
 NS_CORECOORD_BEGIN
