@@ -12,3 +12,6 @@ v0.2.3 - [Nov 30 2015]
 
 v0.2.4 - [Nov 30 2015]
     - Add the getMiddle method.
+
+v0.2.5 - [Nov 30 2015]
+    - Fix the getMiddle method.

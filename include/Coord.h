@@ -106,7 +106,7 @@ public:
     Coord getRight(int offset = 1) const;
 
     //COWTODO: Doxygen comments.
-    Coord getMiddle(const Coord &coord1, const Coord &coord2);
+    Coord getMiddle(const Coord &coord2) const;
 
     ///@brief Gets a the orthogonal coords.
     ///@returns a vector of coords starting from top going clockwise.
