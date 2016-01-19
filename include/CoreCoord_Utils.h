@@ -2,15 +2,14 @@
 //               █      █                                                     //
 //               ████████                                                     //
 //             ██        ██                                                   //
-//            ███  █  █  ███                                                  //
-//            █ █        █ █        CoreCoord.h                               //
-//             ████████████         CoreCoord                                 //
-//           █              █       Copyright (c) 2015 AmazingCow             //
-//          █     █    █     █      www.AmazingCow.com                        //
+//            ███  █  █  ███        CoreCoord_Utils.h                         //
+//            █ █        █ █        CoreCoord                                 //
+//             ████████████                                                   //
+//           █              █       Copyright (c) 2015, 2016                  //
+//          █     █    █     █      AmazingCow - www.AmazingCow.com           //
 //          █     █    █     █                                                //
 //           █              █       N2OMatt - n2omatt@amazingcow.com          //
 //             ████████████         www.amazingcow.com/n2omatt                //
-//                                                                            //
 //                                                                            //
 //                  This software is licensed as GPLv3                        //
 //                 CHECK THE COPYING FILE TO MORE DETAILS                     //
@@ -27,7 +26,7 @@
 //        (See opensource.AmazingCow.com/acknowledgment.html for details).    //
 //        If you will not acknowledge, just send us a email. We'll be         //
 //        *VERY* happy to see our work being used by other people. :)         //
-//        The email is: acknowledgmentopensource@AmazingCow.com               //
+//        The email is: acknowledgment_opensource@AmazingCow.com              //
 //     3. Altered source versions must be plainly marked as such,             //
 //        and must notbe misrepresented as being the original software.       //
 //     4. This notice may not be removed or altered from any source           //
@@ -53,8 +52,8 @@
 //The core version number.
 #define COW_CORECOORD_VERSION_MAJOR    "0"
 #define COW_CORECOORD_VERSION_MINOR    "2"
-#define COW_CORECOORD_VERSION_REVISION "3"
+#define COW_CORECOORD_VERSION_REVISION "6"
 
-#define COW_CORECOORD_VERSION "0.2.4"
+#define COW_CORECOORD_VERSION "0.2.6"
 
 #endif // defined(__CoreCoord_include_CoreCoord_Utils_h__) //
