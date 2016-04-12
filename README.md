@@ -3,6 +3,7 @@ Core Coord
 Made with <3 by [Amazing Cow](http://www.amazingcow.com).
 
 <!-- ####################################################################### -->
+<!-- ####################################################################### -->
 
 ## Intro:
 
@@ -18,6 +19,9 @@ common operations.
 
 You are welcome to use, hack and share it :)
 
+
+
+<!-- ####################################################################### -->
 <!-- ####################################################################### -->
 
 ## Files:
@@ -30,6 +34,8 @@ Here is a list of them:
 * ```Coord.h```
 
 
+
+<!-- ####################################################################### -->
 <!-- ####################################################################### -->
 
 ## More info:
@@ -41,19 +47,38 @@ Anyway if you didn't understand something let us know sending a mail to
 name of this repo.
 
 
+
+<!-- ####################################################################### -->
 <!-- ####################################################################### -->
 
 ## License:
+
 This software is released under GPLv3.
 
 
+
+<!-- ####################################################################### -->
 <!-- ####################################################################### -->
 
 ## TODO:
-Check the TODO file.
+
+Check the TODO file for general things.
+
+This projects uses the COWTODO tags.   
+So install [cowtodo](http://www.github.com/AmazingCow-Tools/COWTODO.html) and run:
+
+``` bash
+$ cd CoreGenius
+$ cowtodo 
+```
+
+That's gonna give you all things to do :D.
+
 
 
 <!-- ####################################################################### -->
+<!-- ####################################################################### -->
 
 ## Others:
+
 Check our repos and take a look at our [open source site](http://opensource.amazingcow.com).
