@@ -28,7 +28,7 @@
 //        *VERY* happy to see our work being used by other people. :)         //
 //        The email is: acknowledgment_opensource@AmazingCow.com              //
 //     3. Altered source versions must be plainly marked as such,             //
-//        and must notbe misrepresented as being the original software.       //
+//        and must not be misrepresented as being the original software.      //
 //     4. This notice may not be removed or altered from any source           //
 //        distribution.                                                       //
 //     5. Most important, you must have fun. ;)                               //
@@ -47,14 +47,16 @@
 //CoreCoord
 #include "CoreCoord_Utils.h"
 
+
 NS_CORECOORD_BEGIN
 
 class Coord
 {
-    // Enums/Constants/Typdefs //
+    // Enums / Constants / Typedefs //
 public:
     ///@brief Typedef to ease the typing of "a vector of Coords".
     typedef std::vector<Coord> Vec;
+
 
     // Friends //
 public:
@@ -69,6 +71,7 @@ public:
 
     ///@brief Adds the y and x.
     friend Coord operator +(const Coord &lhs, const Coord &rhs);
+
 
     // CTOR/DTOR //
 public:
@@ -106,7 +109,7 @@ public:
 
     ///@brief Gets a Coord that is in the middle of two coords.
     ///@param coord2 The second coord that will be compared.
-    ///@returns A coord that has the y and y coordinates specified 
+    ///@returns A coord that has the y and y coordinates specified
     ///by formula: (c1.y + c2.y) / 2 and (c1.x + c2.x) / 2.
     Coord getMiddle(const Coord &coord2) const;
 
@@ -114,11 +117,12 @@ public:
     ///@returns a vector of coords starting from top going clockwise.
     ///@see Coord::getSurrounding.
     Vec getOrthogonal() const;
-    
+
     ///@brief Gets a the surrounding coords.
     ///@returns a vector of coords starting from top going clockwise.
     ///@see Coord::getSurrounding.
     Vec getSurrounding() const;
+
 
     // iVars //
 public:

@@ -28,7 +28,7 @@
 //        *VERY* happy to see our work being used by other people. :)         //
 //        The email is: acknowledgment_opensource@AmazingCow.com              //
 //     3. Altered source versions must be plainly marked as such,             //
-//        and must notbe misrepresented as being the original software.       //
+//        and must not be misrepresented as being the original software.      //
 //     4. This notice may not be removed or altered from any source           //
 //        distribution.                                                       //
 //     5. Most important, you must have fun. ;)                               //
@@ -66,6 +66,7 @@ Coord operator +(const Coord &lhs, const Coord &rhs)
 }
 NS_CORECOORD_END
 
+
 // CTOR/DTOR //
 Coord::Coord(int _y /* = 0 */, int _x /* = 0 */) :
     y(_y),
@@ -74,7 +75,8 @@ Coord::Coord(int _y /* = 0 */, int _x /* = 0 */) :
     //Empty...
 }
 
-// Static Methods //
+
+// Public Methods //
 Coord Coord::getUp(int offset /* = 1 */) const
 {
     return Coord(this->y - offset, this->x);
@@ -111,17 +113,17 @@ Coord::Vec Coord::getOrthogonal() const
 Coord::Vec Coord::getSurrounding() const
 {
     return {
-        getUp(),                //Top.
-        getUp().getRight(),     //Top Right.
+        getUp(),              //Top.
+        getUp().getRight(),   //Top Right.
 
-        getRight(),             //Right.
+        getRight(),           //Right.
 
-        getDown().getRight(),   //Bottom Right.
-        getDown(),              //Bottom.
-        getDown().getLeft(),    //Bottom Left.
+        getDown().getRight(), //Bottom Right.
+        getDown(),            //Bottom.
+        getDown().getLeft(),  //Bottom Left.
 
-        getLeft(),              //Left.
+        getLeft(),            //Left.
 
-        getUp().getLeft()       //Top Left.
+        getUp().getLeft()     //Top Left.
     };
 }
