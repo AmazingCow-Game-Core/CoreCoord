@@ -60,7 +60,7 @@ public:
 
     // Friends //
 public:
-    ///@brief Output a string representation in for of (y, x).
+    ///@brief Output a string representation in form of (y, x).
     friend std::ostream& operator <<(std::ostream &os, const Coord &coord);
 
     ///@brief Check if two coords have the same y and x.
@@ -78,6 +78,8 @@ public:
     ///@brief Constructs a Coord.
     ///@param y The Y coordinate - Default is 0.
     ///@param x The X coordinate - Default is 0.
+    ///@note Coord is Y axis first - Take care with it.
+    ///@warning Coord is Y axis first - Take care with it.
     Coord(int y = 0, int x = 0);
 
 
