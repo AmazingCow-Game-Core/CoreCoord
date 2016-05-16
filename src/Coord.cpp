@@ -44,7 +44,8 @@
 //Usings.
 USING_NS_CORECOORD;
 
-// Friends //
+// Operators //
+//Friends
 NS_CORECOORD_BEGIN
 std::ostream& operator <<(std::ostream &os, const Coord &coord)
 {
@@ -64,7 +65,29 @@ Coord operator +(const Coord &lhs, const Coord &rhs)
 {
     return Coord(lhs.y + rhs.y, lhs.x + rhs.x);
 }
+Coord operator -(const Coord &lhs, const Coord &rhs)
+{
+    return Coord(lhs.y - rhs.y, lhs.x - rhs.x);
+}
 NS_CORECOORD_END
+
+//Members
+
+///@brief Adds the y and x.
+Coord& Coord::operator +=(const Coord &rhs)
+{
+    this->x += rhs.x;
+    this->y += rhs.y;
+
+    return (*this);
+}
+Coord& Coord::operator -=(const Coord &rhs)
+{
+    this->x -= rhs.x;
+    this->y -= rhs.y;
+
+    return (*this);
+}
 
 
 // CTOR/DTOR //

@@ -58,8 +58,9 @@ public:
     typedef std::vector<Coord> Vec;
 
 
-    // Friends //
+    // Operator //
 public:
+    //Friends
     ///@brief Output a string representation in form of (y, x).
     friend std::ostream& operator <<(std::ostream &os, const Coord &coord);
 
@@ -71,6 +72,16 @@ public:
 
     ///@brief Adds the y and x.
     friend Coord operator +(const Coord &lhs, const Coord &rhs);
+
+    ///@brief Subtracts y and x.
+    friend Coord operator -(const Coord &lhs, const Coord &rhs);
+
+    //Members
+    ///@brief Adds the y and x.
+    Coord& operator +=(const Coord &rhs);
+
+    ///@brief Subtracts y and x.
+    Coord& operator -=(const Coord &rhs);
 
 
     // CTOR/DTOR //
