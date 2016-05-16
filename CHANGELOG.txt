@@ -1,6 +1,19 @@
 ================================================================================
 | Version 0.2.x                                                                |
 ================================================================================
+v0.2.9 - [May 16 2016]
+-- General --
+    - Add some operators.
+
+-- Source --
+    include/CoreCoord_Utils.h
+        - Update version numbers.
+
+    include/Coord.h
+    src/Coord.cpp
+        - Add the some operators.
+
+--------------------------------------------------------------------------------
 v0.2.8 - [Apr 30 2016]
 -- General --
     - Add some documentation.
