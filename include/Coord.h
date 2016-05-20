@@ -136,6 +136,15 @@ public:
     ///@see Coord::getSurrounding.
     Vec getSurrounding() const;
 
+    ///@brief Gets if the both coords have the same X coordinate.
+    ///@returns True if they are at same X, false otherwise.
+    ///@see isSameY().
+    bool isSameX(const Coord &coord2) const;
+
+    ///@brief Gets if the both coords have the same Y coordinate.
+    ///@returns True if they are at same Y, false otherwise.
+    ///@see isSameX().
+    bool isSameY(const Coord &coord2) const;
 
     // iVars //
 public:

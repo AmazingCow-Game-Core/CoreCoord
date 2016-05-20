@@ -150,3 +150,13 @@ Coord::Vec Coord::getSurrounding() const
         getUp().getLeft()     //Top Left.
     };
 }
+
+bool Coord::isSameX(const Coord &coord2) const
+{
+    return this->x == coord2.x;
+}
+
+bool Coord::isSameY(const Coord &coord2) const
+{
+    return this->y == coord2.y;
+}
