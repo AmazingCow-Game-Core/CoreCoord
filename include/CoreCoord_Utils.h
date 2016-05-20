@@ -52,8 +52,8 @@
 //The core version number.
 #define COW_CORECOORD_VERSION_MAJOR    "0"
 #define COW_CORECOORD_VERSION_MINOR    "2"
-#define COW_CORECOORD_VERSION_REVISION "9"
+#define COW_CORECOORD_VERSION_REVISION "10"
 
-#define COW_CORECOORD_VERSION "0.2.9"
+#define COW_CORECOORD_VERSION "0.2.10"
 
 #endif // defined(__CoreCoord_include_CoreCoord_Utils_h__) //
