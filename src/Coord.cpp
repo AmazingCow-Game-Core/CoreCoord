@@ -44,6 +44,29 @@
 //Usings.
 USING_NS_CORECOORD;
 
+// Static Methods //
+const Coord& Coord::Left()
+{
+    static Coord s_left(0, -1);
+    return s_left;
+}
+const Coord& Coord::Right()
+{
+    static Coord s_right(0, +1);
+    return s_right;
+}
+const Coord& Coord::Up()
+{
+    static Coord s_up(-1, 0);
+    return s_up;
+}
+const Coord& Coord::Down()
+{
+    static Coord s_down(1, 0);
+    return s_down;
+}
+
+
 // Operators //
 //Friends
 NS_CORECOORD_BEGIN
@@ -72,7 +95,6 @@ Coord operator -(const Coord &lhs, const Coord &rhs)
 NS_CORECOORD_END
 
 //Members
-
 ///@brief Adds the y and x.
 Coord& Coord::operator +=(const Coord &rhs)
 {

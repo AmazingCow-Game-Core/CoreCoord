@@ -57,6 +57,14 @@ public:
     ///@brief Typedef to ease the typing of "a vector of Coords".
     typedef std::vector<Coord> Vec;
 
+    // Static Methods //
+public:
+    //COWTODO: Add the documentation...
+    static const Coord& Left ();
+    static const Coord& Right();
+    static const Coord& Up   ();
+    static const Coord& Down ();
+
 
     // Operator //
 public:
