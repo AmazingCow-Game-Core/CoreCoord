@@ -1,6 +1,19 @@
 ================================================================================
 | Version 0.2.x                                                                |
 ================================================================================
+v0.2.11 - [May 20 2016]
+-- General --
+    - - Add some static methods to get the direction coords.
+
+-- Source --
+    include/CoreCoord_Utils.h
+        - Update version numbers.
+
+    include/Coord.h
+    src/Coord.cpp
+        - Add some static methods to get the direction coords.
+
+--------------------------------------------------------------------------------
 v0.2.10 - [May 20 2016]
 -- General --
     - Add some helper methods.
