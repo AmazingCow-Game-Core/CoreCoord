@@ -7,17 +7,6 @@
 <!-- ####################################################################### -->
 <!-- ####################################################################### -->
 
-## Websites:
-
-* [CoreCoord Website](http://opensource.amazingcow.com/gamecore/corecoord/)
-* [Game Core Website](http://opensource.amazingcow.com/gamecore/) - 
-The Amazing Cow's Game Cores site.
-
-
-
-<!-- ####################################################################### -->
-<!-- ####################################################################### -->
-
 ## Description:
 
 ```CoreCoord``` provides a very meaningful way to represent 2D values in 
@@ -129,9 +118,7 @@ We hope that you enjoy :D
 We strive to make our source code fully documented.   
 While there are a myriad of comments, one might find useful take a look at:
 
-* [Project Website](http://opensource.amazingcow.com/gamecore/corecoord/).
-* [Doxygen Docs](http://opensource.amazingcow.com/gamecore/corecoord/doxygen/).
-* [A list of blog posts about the project](http://opensource.amazingcow.com/gamecore/corecoord/posts/).
+* [Doxygen Docs](http://www.amazingcow.com/projects/corecoord/doxygen/).
 
 Anyway if you didn't understand something let us know sending a mail to  
 [help_opensource@amazingcow.com]() with the subject filled with the
