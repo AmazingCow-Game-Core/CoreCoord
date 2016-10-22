@@ -99,7 +99,7 @@ public:
     ///@param x The X coordinate - Default is 0.
     ///@note Coord is Y axis first - Take care with it.
     ///@warning Coord is Y axis first - Take care with it.
-    Coord(int y = 0, int x = 0);
+    explicit Coord(int y = 0, int x = 0);
 
 
     // Public Methods //
