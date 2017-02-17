@@ -1,6 +1,11 @@
 ================================================================================
 | Version 0.2.x                                                                |
 ================================================================================
+v0.2.14 - [Fec 17, 2017]
+-- General --
+    - Add the multiply operators.
+
+
 v0.2.13 - [Oct 22, 2016]
 -- General --
     - Add explicit to Coord ctor to avoid undesired conversions.
