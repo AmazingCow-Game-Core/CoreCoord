@@ -5,7 +5,7 @@
 //            ███  █  █  ███        Coord.cpp                                 //
 //            █ █        █ █        CoreCoord                                 //
 //             ████████████                                                   //
-//           █              █       Copyright (c) 2015, 2016                  //
+//           █              █       Copyright (c) 2015, 2016, 2017            //
 //          █     █    █     █      AmazingCow - www.AmazingCow.com           //
 //          █     █    █     █                                                //
 //           █              █       N2OMatt - n2omatt@amazingcow.com          //
@@ -92,7 +92,13 @@ Coord operator -(const Coord &lhs, const Coord &rhs)
 {
     return Coord(lhs.y - rhs.y, lhs.x - rhs.x);
 }
+
+Coord operator *(const Coord &lhs, int scalar)
+{
+    return Coord(lhs.y * scalar, lhs.x * scalar);
+}
 NS_CORECOORD_END
+
 
 //Members
 ///@brief Adds the y and x.
@@ -111,6 +117,13 @@ Coord& Coord::operator -=(const Coord &rhs)
     return (*this);
 }
 
+Coord& operator *=(int scalar)
+{
+    this->x *= scalar;
+    this->y *= scalar;
+
+    return (*this);
+}
 
 // CTOR/DTOR //
 Coord::Coord(int _y /* = 0 */, int _x /* = 0 */) :

@@ -5,7 +5,7 @@
 //            ███  █  █  ███        Coord.h                                   //
 //            █ █        █ █        CoreCoord                                 //
 //             ████████████                                                   //
-//           █              █       Copyright (c) 2015, 2016                  //
+//           █              █       Copyright (c) 2015, 2016, 2017            //
 //          █     █    █     █      AmazingCow - www.AmazingCow.com           //
 //          █     █    █     █                                                //
 //           █              █       N2OMatt - n2omatt@amazingcow.com          //
@@ -84,12 +84,19 @@ public:
     ///@brief Subtracts y and x.
     friend Coord operator -(const Coord &lhs, const Coord &rhs);
 
+    ///@brief Multiplies by a scalar.
+    friend Coord operator *(const Coord &lhs, int scalar);
+
+
     //Members
     ///@brief Adds the y and x.
     Coord& operator +=(const Coord &rhs);
 
     ///@brief Subtracts y and x.
     Coord& operator -=(const Coord &rhs);
+
+    ///@brief Multiplies y and x by scalar.
+    Coord& operator *=(int scalar);
 
 
     // CTOR/DTOR //
