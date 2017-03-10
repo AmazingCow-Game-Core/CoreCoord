@@ -125,6 +125,7 @@ Coord& Coord::operator *=(int scalar)
     return (*this);
 }
 
+
 // CTOR/DTOR //
 Coord::Coord(int _y /* = 0 */, int _x /* = 0 */) :
     y(_y),
@@ -151,12 +152,12 @@ Coord Coord::getRight(int offset /* = 1 */) const
 {
     return Coord(this->y, this->x + offset);
 }
-
 Coord Coord::getMiddle(const Coord &coord2) const
 {
     return Coord((this->y + coord2.y) / 2,
                  (this->x + coord2.x) / 2);
 }
+
 
 Coord::Vec Coord::getOrthogonal() const
 {
@@ -186,6 +187,7 @@ Coord::Vec Coord::getSurrounding() const
     };
 }
 
+
 bool Coord::isSameX(const Coord &coord2) const
 {
     return this->x == coord2.x;
@@ -194,4 +196,22 @@ bool Coord::isSameX(const Coord &coord2) const
 bool Coord::isSameY(const Coord &coord2) const
 {
     return this->y == coord2.y;
+}
+
+
+void Coord::makeUnit()
+{
+    if(this->x != 0)
+        this->x /= abs(this->x);
+
+    if(this->y != 0)
+        this->y /= abs(this->y);    
+}
+
+Coord Coord::getUnit() const
+{
+    auto ret = Coord(*this);
+    ret.makeUnit();
+
+    return ret;
 }

@@ -107,6 +107,8 @@ public:
     ///@note Coord is Y axis first - Take care with it.
     ///@warning Coord is Y axis first - Take care with it.
     explicit Coord(int y = 0, int x = 0);
+    
+    
 
 
     // Public Methods //
@@ -141,6 +143,7 @@ public:
     ///by formula: (c1.y + c2.y) / 2 and (c1.x + c2.x) / 2.
     Coord getMiddle(const Coord &coord2) const;
 
+
     ///@brief Gets a the orthogonal coords.
     ///@returns a vector of coords starting from top going clockwise.
     ///@see Coord::getSurrounding.
@@ -151,6 +154,7 @@ public:
     ///@see Coord::getSurrounding.
     Vec getSurrounding() const;
 
+
     ///@brief Gets if the both coords have the same X coordinate.
     ///@returns True if they are at same X, false otherwise.
     ///@see isSameY().
@@ -160,6 +164,17 @@ public:
     ///@returns True if they are at same Y, false otherwise.
     ///@see isSameX().
     bool isSameY(const Coord &coord2) const;
+
+
+    ///@brief Make the values of the Coord in range of (-1, 1).
+    ///@see getUnit().
+    void makeUnit();
+
+    ///@brief Return a new Unit Coord with the values in range of(-1, 1).
+    ///@returns A new Unit Coord.
+    ///@see makeUnit();
+    Coord getUnit() const;
+
 
     // iVars //
 public:
