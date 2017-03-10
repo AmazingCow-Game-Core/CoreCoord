@@ -117,7 +117,7 @@ Coord& Coord::operator -=(const Coord &rhs)
     return (*this);
 }
 
-Coord& operator *=(int scalar)
+Coord& Coord::operator *=(int scalar)
 {
     this->x *= scalar;
     this->y *= scalar;
