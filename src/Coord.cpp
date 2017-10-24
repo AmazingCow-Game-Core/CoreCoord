@@ -44,22 +44,28 @@
 //Usings.
 USING_NS_CORECOORD;
 
-// Static Methods //
+
+////////////////////////////////////////////////////////////////////////////////
+// Static Methods                                                             //
+////////////////////////////////////////////////////////////////////////////////
 const Coord& Coord::Left()
 {
     static Coord s_left(0, -1);
     return s_left;
 }
+
 const Coord& Coord::Right()
 {
     static Coord s_right(0, +1);
     return s_right;
 }
+
 const Coord& Coord::Up()
 {
     static Coord s_up(-1, 0);
     return s_up;
 }
+
 const Coord& Coord::Down()
 {
     static Coord s_down(1, 0);
@@ -67,7 +73,9 @@ const Coord& Coord::Down()
 }
 
 
-// Operators //
+////////////////////////////////////////////////////////////////////////////////
+// Operators                                                                  //
+////////////////////////////////////////////////////////////////////////////////
 //Friends
 NS_CORECOORD_BEGIN
 std::ostream& operator <<(std::ostream &os, const Coord &coord)
@@ -75,10 +83,12 @@ std::ostream& operator <<(std::ostream &os, const Coord &coord)
     os << "(" << coord.y << "," << coord.x << ")";
     return os;
 }
+
 bool operator ==(const Coord &lhs, const Coord rhs)
 {
     return (lhs.y == rhs.y) && (lhs.x == rhs.x);
 }
+
 bool operator !=(const Coord &lhs, const Coord rhs)
 {
     return !(lhs == rhs);
@@ -88,6 +98,7 @@ Coord operator +(const Coord &lhs, const Coord &rhs)
 {
     return Coord(lhs.y + rhs.y, lhs.x + rhs.x);
 }
+
 Coord operator -(const Coord &lhs, const Coord &rhs)
 {
     return Coord(lhs.y - rhs.y, lhs.x - rhs.x);
@@ -109,6 +120,7 @@ Coord& Coord::operator +=(const Coord &rhs)
 
     return (*this);
 }
+
 Coord& Coord::operator -=(const Coord &rhs)
 {
     this->x -= rhs.x;
@@ -126,7 +138,9 @@ Coord& Coord::operator *=(int scalar)
 }
 
 
-// CTOR/DTOR //
+////////////////////////////////////////////////////////////////////////////////
+// CTOR / DTOR                                                                //
+////////////////////////////////////////////////////////////////////////////////
 Coord::Coord(int _y /* = 0 */, int _x /* = 0 */) :
     y(_y),
     x(_x)
@@ -135,23 +149,29 @@ Coord::Coord(int _y /* = 0 */, int _x /* = 0 */) :
 }
 
 
-// Public Methods //
+////////////////////////////////////////////////////////////////////////////////
+// Public Methods                                                             //
+////////////////////////////////////////////////////////////////////////////////
 Coord Coord::getUp(int offset /* = 1 */) const
 {
     return Coord(this->y - offset, this->x);
 }
+
 Coord Coord::getDown(int offset /* = 1 */) const
 {
     return Coord(this->y + offset, this->x);
 }
+
 Coord Coord::getLeft(int offset /* = 1 */) const
 {
     return Coord(this->y, this->x - offset);
 }
+
 Coord Coord::getRight(int offset /* = 1 */) const
 {
     return Coord(this->y, this->x + offset);
 }
+
 Coord Coord::getMiddle(const Coord &coord2) const
 {
     return Coord((this->y + coord2.y) / 2,
@@ -205,7 +225,7 @@ void Coord::makeUnit()
         this->x /= abs(this->x);
 
     if(this->y != 0)
-        this->y /= abs(this->y);    
+        this->y /= abs(this->y);
 }
 
 Coord Coord::getUnit() const

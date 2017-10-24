@@ -57,6 +57,7 @@ public:
     ///@brief Typedef to ease the typing of "a vector of Coords".
     typedef std::vector<Coord> Vec;
 
+
     // Static Methods //
 public:
     //COWTODO: Add the documentation...
@@ -87,7 +88,6 @@ public:
     ///@brief Multiplies by a scalar.
     friend Coord operator *(const Coord &lhs, int scalar);
 
-
     //Members
     ///@brief Adds the y and x.
     Coord& operator +=(const Coord &rhs);
@@ -107,8 +107,6 @@ public:
     ///@note Coord is Y axis first - Take care with it.
     ///@warning Coord is Y axis first - Take care with it.
     explicit Coord(int y = 0, int x = 0);
-    
-    
 
 
     // Public Methods //
