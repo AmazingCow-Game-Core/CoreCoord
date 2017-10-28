@@ -18,8 +18,7 @@
 //                                                                            //
 //---------------------------------------------------------------------------~//
 
-#ifndef __CoreCoord_include_Coord_h__
-#define __CoreCoord_include_Coord_h__
+#pragma once
 
 //std
 #include <ostream>
@@ -159,6 +158,4 @@ public:
     int y, x;
 };
 
-
 NS_CORECOORD_END
-#endif // defined(__CoreCoord_include_Coord_h__) //
