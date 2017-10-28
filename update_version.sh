@@ -29,7 +29,7 @@
 ################################################################################
 PROJECT_NAME="CORECOORD"
 HEADER_FILE=./include/CoreCoord_Utils.h
-DOXY_FILE=Doxyfile
+DOXY_FILE=./docs/Doxyfile
 
 
 ################################################################################
