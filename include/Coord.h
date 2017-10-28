@@ -39,11 +39,17 @@ public:
 
     // Static Methods //
 public:
-    //COWTODO: Add the documentation...
-    static const Coord& Left ();
+    ///@brief Gets a Coord that represents the left of something (0, -1).
+    static const Coord& Left();
+
+    ///@brief Gets a Coord that represents the right of something (0, +1).
     static const Coord& Right();
-    static const Coord& Up   ();
-    static const Coord& Down ();
+
+    ///@brief Gets a Coord that represents the top of something (-1, -0).
+    static const Coord& Up();
+
+    ///@brief Gets a Coord that represents the left of something (+1, 0).
+    static const Coord& Down();
 
 
     // Operator //
