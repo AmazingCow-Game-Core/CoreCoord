@@ -1,11 +1,38 @@
 ================================================================================
 | Version 0.2.x                                                                |
 ================================================================================
-v0.2.14 - [Fec 17, 2017]
+v0.2.15 - [Oct 28, 2017]
+-- General --
+    This release new methods to make and get coord as a unit coord,
+    changed the license headers for all source files and make some
+    bug fixes.
+    All info and doxygen files are now located in docs directory.
+
+-- Changed --
+    - Update the license headers to the Amazing Cow's new ones.
+    - Moved from include guards to #pragma once.
+    - A lot of cosmetic changes.
+    - Move the info files to docs folder.
+    - Move the doxygen files to docs folder.
+    - Update the mainpage.dox with the correct links.
+    - Update the update_version.sh script to the correct location of DOXYFILE.
+
+-- Added --
+    - makeUnit() and getUnit method.
+    - Write the missing doxygen comments.
+    - Write the site_info file.
+
+-- Bug Fix --
+    - Fix the operator *=(int scalar) that was missing the class scope.
+
+
+--------------------------------------------------------------------------------
+v0.2.14 - [Fev 17, 2017]
 -- General --
     - Add the multiply operators.
 
 
+--------------------------------------------------------------------------------
 v0.2.13 - [Oct 22, 2016]
 -- General --
     - Add explicit to Coord ctor to avoid undesired conversions.
@@ -17,6 +44,7 @@ v0.2.12 - [Jul 15, 2016]
     - Update the mainpage.dox and README.md to the
       correct amazing cow links.
     - Start using the update_version script.
+
 
 --------------------------------------------------------------------------------
 v0.2.11 - [May 20 2016]
@@ -31,6 +59,7 @@ v0.2.11 - [May 20 2016]
     src/Coord.cpp
         - Add some static methods to get the direction coords.
 
+
 --------------------------------------------------------------------------------
 v0.2.10 - [May 20 2016]
 -- General --
@@ -44,6 +73,7 @@ v0.2.10 - [May 20 2016]
     src/Coord.cpp
         - Add some helper methods.
 
+
 --------------------------------------------------------------------------------
 v0.2.9 - [May 16 2016]
 -- General --
@@ -56,6 +86,7 @@ v0.2.9 - [May 16 2016]
     include/Coord.h
     src/Coord.cpp
         - Add the some operators.
+
 
 --------------------------------------------------------------------------------
 v0.2.8 - [Apr 30 2016]
@@ -86,6 +117,7 @@ v0.2.8 - [Apr 30 2016]
     Doxyfile
         - Add the doxygen configuration.
 
+
 --------------------------------------------------------------------------------
 v0.2.7 - [Apr 11 2016]
     - Fix the misspelled word (notbe -> not be) in license headers.
@@ -99,6 +131,7 @@ v0.2.7 - [Apr 11 2016]
         - Reverse the sort order (New entries at top).
         - Add separators.
 
+
 --------------------------------------------------------------------------------
 v0.2.6 - [Jan 19 2016]
     - Update the license headers.
@@ -106,18 +139,22 @@ v0.2.6 - [Jan 19 2016]
     - Remove the usage section on README.
     - Fix the version numbers on CoreCoord_Utils.h
 
+
 --------------------------------------------------------------------------------
 v0.2.5 - [Nov 30 2015]
     - Fix the getMiddle method.
+
 
 --------------------------------------------------------------------------------
 v0.2.4 - [Nov 30 2015]
     - Add the getMiddle method.
 
+
 --------------------------------------------------------------------------------
 v0.2.3 - [Nov 30 2015]
     - Make the getLeft, getRight, getUp and getDown methods
       have the offset = 1 as default.
+
 
 --------------------------------------------------------------------------------
 v0.2.2 - [Nov 30 2015]
