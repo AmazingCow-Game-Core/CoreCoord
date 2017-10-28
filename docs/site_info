@@ -1,10 +1,10 @@
 Title:
-    CordCoord
+    CoreCoord
 Description:
     Provides a very meaningful way to represent 2D values.
 URL:
-    Github, https://github.com/AmazingCow-Libs/CordCoord
-    Docs, http://www.amazingcow.com/docs/CordCoord
+    Github, https://github.com/AmazingCow-Libs/CoreCoord
+    Docs, http://www.amazingcow.com/docs/CoreCoord
 Owner:
     AmazingCow Labs
 Section:
