@@ -43,8 +43,8 @@ REVISION=$(echo $@ | cut -d. -f3);
 ################################################################################
 ## Sanity                                                                     ##
 ################################################################################
-#Thanks to Charles Duffy in SO.
-#http://stackoverflow.com/questions/806906/how-do-i-test-if-a-variable-is-a-number-in-bash
+## Thanks to Charles Duffy in SO.
+## http://stackoverflow.com/questions/806906/how-do-i-test-if-a-variable-is-a-number-in-bash
 re='^[0-9]+$' #Check if is number.
 
 if ! [[ $MAJOR =~ $re ]] ; then
@@ -76,8 +76,9 @@ cat $HEADER_FILE \
     | sed -e s/"$REVISION_STR\".*\""/"$REVISION_STR\"$REVISION\""/g \
     > $HEADER_FILE.new;
 
+
 ################################################################################
-## Update DOXY FILE                                                           ##
+## Update DOXYFILE                                                            ##
 ################################################################################
 PROJECT_NUMBER_STR="PROJECT_NUMBER         ="
 PROJECT_NUMBER_STR_REPLACE="PROJECT_NUMBER         = v$MAJOR.$MINOR.$REVISION";
@@ -85,7 +86,6 @@ PROJECT_NUMBER_STR_REPLACE="PROJECT_NUMBER         = v$MAJOR.$MINOR.$REVISION";
 cat $DOXY_FILE \
     | sed -e s/"$PROJECT_NUMBER_STR.*"/"$PROJECT_NUMBER_STR_REPLACE"/g \
     > $DOXY_FILE.new;
-
 
 
 ################################################################################
