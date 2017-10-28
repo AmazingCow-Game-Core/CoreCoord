@@ -6,15 +6,16 @@ games (and possible other applications too).  \n
 We tried to keep the lib very simple only adding methods to ease the very
 common operations.
 
-
 You may find interesting take a look in:
 
 - @ref Coord class documentation - The fun is there.
 \n\n
 
-- [Project GitHub](https://www.github.com/AmazingCow-Game-Core/CoreCoord/). \n
-- [AmazingCow Open Source Projects](http://opensource.amazingcow.com).
+- [Project GitHub](https://www.github.com/AmazingCow-Libs/CoreCoord/). \n
+- [AmazingCow FLOSS Projects](http://floss.amazingcow.com).
 
+Please report any bugs found to [help_bugs@amazingcow.com](mailto:help_bugs@amazingcow.com),
+and any questions about the project to [help_floss@amazingcow.com](mailto:help_floss@amazingcow.com)!
 
 You are __very welcomed__ to __share__ and __hack__ it.
 
