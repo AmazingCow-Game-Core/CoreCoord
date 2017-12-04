@@ -20,10 +20,10 @@
 
 #pragma once
 
-//std
+// std
 #include <ostream>
 #include <vector>
-//CoreCoord
+// CoreCoord
 #include "CoreCoord_Utils.h"
 
 
@@ -31,162 +31,205 @@ NS_CORECOORD_BEGIN
 
 class Coord
 {
-    // Enums / Constants / Typedefs //
+    //------------------------------------------------------------------------//
+    // Enums / Constants / Typedefs                                           //
+    //------------------------------------------------------------------------//
 public:
-    ///@brief Typedef to ease the typing of "a vector of Coords".
+    ///-------------------------------------------------------------------------
+    /// @brief Typedef to ease the typing of "a vector of Coords".
     typedef std::vector<Coord> Vec;
 
 
     // Static Methods //
 public:
-    ///@brief Gets a Coord that represents the left of something (0, -1).
+    ///-------------------------------------------------------------------------
+    /// @brief Gets a Coord that represents the left of something (0, -1).
     static const Coord& Left();
 
-    ///@brief Gets a Coord that represents the right of something (0, +1).
+    ///-------------------------------------------------------------------------
+    /// @brief Gets a Coord that represents the right of something (0, +1).
     static const Coord& Right();
 
-    ///@brief Gets a Coord that represents the top of something (-1, -0).
+    ///-------------------------------------------------------------------------
+    /// @brief Gets a Coord that represents the top of something (-1, -0).
     static const Coord& Up();
 
-    ///@brief Gets a Coord that represents the left of something (+1, 0).
+    ///-------------------------------------------------------------------------
+    /// @brief Gets a Coord that represents the left of something (+1, 0).
     static const Coord& Down();
 
 
-    // Operators //
+    //------------------------------------------------------------------------//
+    // Friends Operators                                                      //
+    //------------------------------------------------------------------------//
 public:
-    //Friends
-    ///@brief Output a string representation in form of (y, x).
+    ///-------------------------------------------------------------------------
+    /// @brief Output a string representation in form of (y, x).
     friend std::ostream& operator <<(std::ostream &os, const Coord &coord);
 
-    ///@brief Check if two coords have the same y and x.
+    ///-------------------------------------------------------------------------
+    /// @brief Check if two coords have the same y and x.
     friend bool operator ==(const Coord &lhs, const Coord rhs);
 
-    ///@brief Check if two coords have the different y and x.
+    ///-------------------------------------------------------------------------
+    /// @brief Check if two coords have the different y and x.
     friend bool operator !=(const Coord &lhs, const Coord rhs);
 
-    ///@brief Adds the y and x.
+    ///-------------------------------------------------------------------------
+    /// @brief Adds the y and x.
     friend Coord operator +(const Coord &lhs, const Coord &rhs);
 
-    ///@brief Subtracts y and x.
+    ///-------------------------------------------------------------------------
+    /// @brief Subtracts y and x.
     friend Coord operator -(const Coord &lhs, const Coord &rhs);
 
-    ///@brief Multiplies by a scalar.
+    ///-------------------------------------------------------------------------
+    /// @brief Multiplies by a scalar.
     friend Coord operator *(const Coord &lhs, int scalar);
 
-    //Members
-    ///@brief Adds the y and x.
+
+    //------------------------------------------------------------------------//
+    // Member Operators                                                       //
+    //------------------------------------------------------------------------//
+public:
+    ///-------------------------------------------------------------------------
+    /// @brief Adds the y and x.
     Coord& operator +=(const Coord &rhs);
 
-    ///@brief Subtracts y and x.
+    ///-------------------------------------------------------------------------
+    /// @brief Subtracts y and x.
     Coord& operator -=(const Coord &rhs);
 
-    ///@brief Multiplies y and x by scalar.
+    ///-------------------------------------------------------------------------
+    /// @brief Multiplies y and x by scalar.
     Coord& operator *=(int scalar);
 
 
-    // CTOR / DTOR //
+    //------------------------------------------------------------------------//
+    // CTOR / DTOR                                                            //
+    //------------------------------------------------------------------------//
 public:
-    ///@brief
-    ///  Constructs a Coord.
-    ///@param y
-    ///  The Y coordinate - Default is 0.
-    ///@param x
-    ///  The X coordinate - Default is 0.
-    ///@note
-    ///  Coord is Y axis first - Take care with it.
-    ///@warning
-    ///  Coord is Y axis first - Take care with it.
+    ///-------------------------------------------------------------------------
+    /// @brief
+    ///   Constructs a Coord.
+    /// @param y
+    ///   The Y coordinate - Default is 0.
+    /// @param x
+    ///   The X coordinate - Default is 0.
+    /// @note
+    ///   Coord is Y axis first - Take care with it.
+    /// @warning
+    ///   Coord is Y axis first - Take care with it.
     explicit Coord(int y = 0, int x = 0);
 
 
-    // Public Methods //
+    //------------------------------------------------------------------------//
+    // Public Methods                                                         //
+    //------------------------------------------------------------------------//
 public:
-    ///@brief
-    ///  Gets a Coord that is top of this coord.
-    ///@param offset
-    ///  How many times it will be on top.
-    ///@returns
-    ///  A coord that have the y coordinate "offset" times less
-    ///  than this coord.
+    ///-------------------------------------------------------------------------
+    /// @brief
+    ///   Gets a Coord that is top of this coord.
+    /// @param offset
+    ///   How many times it will be on top.
+    /// @returns
+    ///   A coord that have the y coordinate "offset" times less
+    ///   than this coord.
     Coord getUp(int offset = 1) const;
 
-    ///@brief
-    ///  Gets a Coord that is bottom of this coord.
-    ///@param
-    ///  offset How many times it will be on bottom.
-    ///@returns
-    ///  A coord that have the y coordinate "offset" times more
-    ///  than this coord.
+    ///-------------------------------------------------------------------------
+    /// @brief
+    ///   Gets a Coord that is bottom of this coord.
+    /// @param
+    ///   offset How many times it will be on bottom.
+    /// @returns
+    ///   A coord that have the y coordinate "offset" times more
+    ///   than this coord.
     Coord getDown(int offset = 1) const;
 
-    ///@brief
+    ///-------------------------------------------------------------------------
+    /// @brief
     ///   Gets a Coord that is on left of this coord.
-    ///@param offset
+    /// @param offset
     ///   How many times it will be on left.
-    ///@returns
-    ///  A coord that have the x coordinate "offset" times less
-    ///  than this coord.
+    /// @returns
+    ///   A coord that have the x coordinate "offset" times less
+    ///   than this coord.
     Coord getLeft(int offset = 1) const;
 
-    ///@brief
-    ///  Gets a Coord that is on right of this coord.
-    ///@param offset
-    ///  How many times it will be on right.
-    ///@returns
-    ///  A coord that have the x coordinate "offset" times more
-    ///  than this coord.
+    ///-------------------------------------------------------------------------
+    /// @brief
+    ///   Gets a Coord that is on right of this coord.
+    /// @param offset
+    ///   How many times it will be on right.
+    /// @returns
+    ///   A coord that have the x coordinate "offset" times more
+    ///   than this coord.
     Coord getRight(int offset = 1) const;
 
-    ///@brief
-    ////  Gets a Coord that is in the middle of two coords.
-    ///@param coord2
+    ///-------------------------------------------------------------------------
+    /// @brief
+    ///   Gets a Coord that is in the middle of two coords.
+    /// @param coord2
     ///   The second coord that will be compared.
-    ///@returns
+    /// @returns
     ///   A coord that has the y and y coordinates specified
     ///   by formula: (c1.y + c2.y) / 2 and (c1.x + c2.x) / 2.
     Coord getMiddle(const Coord &coord2) const;
 
 
-    ///@brief
-    ///  Gets a the orthogonal coords.
-    ///@returns
-    ///  a vector of coords starting from top going clockwise.
-    ///@see Coord::getSurrounding.
+    ///-------------------------------------------------------------------------
+    /// @brief
+    ///   Gets a the orthogonal coords.
+    /// @returns
+    ///   a vector of coords starting from top going clockwise.
+    /// @see
+    ///   Coord::getSurrounding.
     Vec getOrthogonal() const;
 
-    ///@brief
-    ///  Gets a the surrounding coords.
-    ///@returns
-    //// a vector of coords starting from top going clockwise.
-    ///@see Coord::getSurrounding.
+    ///-------------------------------------------------------------------------
+    /// @brief
+    ///   Gets a the surrounding coords.
+    /// @returns
+    ///   a vector of coords starting from top going clockwise.
+    /// @see
+    ///   Coord::getSurrounding.
     Vec getSurrounding() const;
 
-
-    ///@brief
-    ///  Gets if the both coords have the same X coordinate.
-    ///@returns
-    ///  True if they are at same X, false otherwise.
-    ///@see isSameY().
+    ///-------------------------------------------------------------------------
+    /// @brief
+    ///   Gets if the both coords have the same X coordinate.
+    /// @returns
+    ///   True if they are at same X, false otherwise.
+    /// @see
+    ///   isSameY().
     bool isSameX(const Coord &coord2) const;
 
-    ///@brief
-    ///  Gets if the both coords have the same Y coordinate.
-    ///@returns
-    ///  True if they are at same Y, false otherwise.
-    ///@see isSameX().
+    ///-------------------------------------------------------------------------
+    /// @brief
+    ///   Gets if the both coords have the same Y coordinate.
+    /// @returns
+    ///   True if they are at same Y, false otherwise.
+    /// @see
+    ///   isSameX().
     bool isSameY(const Coord &coord2) const;
 
 
-    ///@brief Make the values of the Coord in range of (-1, 1).
-    ///@see getUnit().
+    ///-------------------------------------------------------------------------
+    /// @brief Make the values of the Coord in range of (-1, 1).
+    /// @see getUnit().
     void makeUnit();
 
-    ///@brief Return a new Unit Coord with the values in range of(-1, 1).
-    ///@returns A new Unit Coord.
-    ///@see makeUnit();
+    ///-------------------------------------------------------------------------
+    /// @brief Return a new Unit Coord with the values in range of(-1, 1).
+    /// @returns A new Unit Coord.
+    /// @see makeUnit();
     Coord getUnit() const;
 
 
+    //------------------------------------------------------------------------//
+    // iVars                                                                  //
+    //------------------------------------------------------------------------//
     // iVars //
 public:
     int y, x;
