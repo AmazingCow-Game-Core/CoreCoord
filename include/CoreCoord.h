@@ -18,10 +18,10 @@
 //                                                                            //
 //---------------------------------------------------------------------------~//
 
-#ifndef __CoreCoord_include_CoreCoord_h__
-#define __CoreCoord_include_CoreCoord_h__
+#pragma once
 
+//----------------------------------------------------------------------------//
+// Export Headers                                                             //
+//----------------------------------------------------------------------------//
 #include "Coord.h"
 #include "CoreCoord_Utils.h"
-
-#endif // defined(__CoreCoord_include_CoreCoord_h__) //

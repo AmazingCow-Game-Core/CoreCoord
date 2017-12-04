@@ -18,18 +18,23 @@
 //                                                                            //
 //---------------------------------------------------------------------------~//
 
-#ifndef __CoreCoord_include_CoreCoord_Utils_h__
-#define __CoreCoord_include_CoreCoord_Utils_h__
+#pragma once
 
-//All classes of this core is placed inside this namespace.
-//We use MACROS so is easier to change if needed.
-//Is (in our opinion) more explicit.
-//And finally the editors will not reformat the code.
+//----------------------------------------------------------------------------//
+// Namespaces                                                                 //
+//----------------------------------------------------------------------------//
+// All classes of this core is placed inside this namespace.
+// We use MACROS so is easier to change if needed.
+// Is (in our opinion) more explicit.
+// And finally the editors will not reformat the code.
 #define NS_CORECOORD_BEGIN namespace CoreCoord {
 #define NS_CORECOORD_END   }
 #define USING_NS_CORECOORD using namespace CoreCoord
 
-//The core version number.
+
+//----------------------------------------------------------------------------//
+// Version                                                                    //
+//----------------------------------------------------------------------------//
 #define COW_CORECOORD_VERSION_MAJOR    "0"
 #define COW_CORECOORD_VERSION_MINOR    "2"
 #define COW_CORECOORD_VERSION_REVISION "15"
@@ -38,5 +43,3 @@
     COW_CORECOORD_VERSION_MAJOR "." \
     COW_CORECOORD_VERSION_MINOR "." \
     COW_CORECOORD_VERSION_REVISION
-
-#endif // defined(__CoreCoord_include_CoreCoord_Utils_h__) //
