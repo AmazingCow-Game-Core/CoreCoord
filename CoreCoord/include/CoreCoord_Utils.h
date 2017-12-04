@@ -36,8 +36,8 @@
 // Version                                                                    //
 //----------------------------------------------------------------------------//
 #define COW_CORECOORD_VERSION_MAJOR    "0"
-#define COW_CORECOORD_VERSION_MINOR    "2"
-#define COW_CORECOORD_VERSION_REVISION "15"
+#define COW_CORECOORD_VERSION_MINOR    "3"
+#define COW_CORECOORD_VERSION_REVISION "0"
 
 #define COW_CORECOORD_VERSION       \
     COW_CORECOORD_VERSION_MAJOR "." \

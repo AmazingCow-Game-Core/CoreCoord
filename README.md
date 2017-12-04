@@ -5,6 +5,23 @@
 
 
 <!-- ####################################################################### -->
+<!-- Websites                                                                -->
+<!-- ####################################################################### -->
+
+## Websites:
+
+General:
+* [Amazing Cow's page](http://www.amazingcow.com).
+* [Amazing Cow's Github](https://github.com/AmazingCow).
+
+Libs:
+* [Amazing Cow's Libs page](https://github.com/AmazingCow-Libs).
+* [Amazing Cow's Libs Github](http://www.amazingcow.com/libs).
+
+
+
+<!-- ####################################################################### -->
+<!-- Description                                                             -->
 <!-- ####################################################################### -->
 
 ## Description:
@@ -14,6 +31,7 @@ games (and possible other applications too).
 We tried to keep the lib very simple only adding methods to ease the very 
 common operations.
 
+As usual, you are **very welcomed** to **share** and **hack** it.
 
 ### Motivation:
 
@@ -23,13 +41,8 @@ two dimensional value - a coordinate - so instead of using types like C++
 create a very, very simple type.
 
 
-<br>
-As usual, you are **very welcomed** to **share** and **hack** it.
-
-
-
-
 <!-- ####################################################################### -->
+<!-- Examples                                                                -->
 <!-- ####################################################################### -->
 
 ## Examples:
@@ -111,6 +124,27 @@ We hope that you enjoy :D
 
 
 <!-- ####################################################################### -->
+<!-- Building                                                                -->
+<!-- ####################################################################### -->
+
+## Building:
+
+```CoreCoord``` is intended to be include as source in your project.  
+So to use it, just grab the whole CoreCoord directory, put it in your 
+project and setup the include paths in the compiler.
+
+As example, let's imagine that you are copying it to a directory called ```libs```.
+In your build script you need to do just the following:
+
+``` bash
+g++ -I /path/to/libs/CoreCoord \
+    ... Other stuff ...        \
+    /path/to/libs/CoreCoord/CoreCoord/src/Coord.cpp 
+```
+
+
+<!-- ####################################################################### -->
+<!-- Documentation                                                           -->
 <!-- ####################################################################### -->
 
 ## Documentation:
@@ -118,15 +152,15 @@ We hope that you enjoy :D
 We strive to make our source code fully documented.   
 While there are a myriad of comments, one might find useful take a look at:
 
-* [Doxygen Docs](http://www.amazingcow.com/projects/corecoord/doxygen/).
+* [Doxygen Docs](http://www.amazingcow.com/docs/CoreCoord/).
 
 Anyway if you didn't understand something let us know sending a mail to  
-[help_opensource@amazingcow.com]() with the subject filled with the
-name of this repo.
+[help_floss@amazingcow.com]() with the subject filled with the name of this repo.
 
 
 
 <!-- ####################################################################### -->
+<!-- Dependencies                                                            -->
 <!-- ####################################################################### -->
 
 ## Dependencies:
@@ -136,15 +170,29 @@ There is no dependency for ```CoreCoord```.
 
 
 <!-- ####################################################################### -->
+<!-- License                                                                 -->
 <!-- ####################################################################### -->
 
 ## License:
 
-This software is released under GPLv3.
-
+This software is **proudly** released under [GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html).
 
 
 <!-- ####################################################################### -->
+<!-- BUGS                                                                    -->
+<!-- ####################################################################### -->
+
+## BUGS:
+
+We strive to make all our code the most bug-free as possible - But we know 
+that few of them can pass without we notice ;).
+
+Please if you find any bug report to [bugs_floss@amazingcow.com]() 
+with the name of this project and/or create an issue here in Github.
+
+
+<!-- ####################################################################### -->
+<!-- TODO                                                                    -->
 <!-- ####################################################################### -->
 
 ## TODO:
@@ -162,11 +210,12 @@ $ cowtodo
 That's gonna give you all things to do :D.
 
 
-
 <!-- ####################################################################### -->
+<!-- Others                                                                  -->
 <!-- ####################################################################### -->
 
 ## Others:
 
-Check our repos and take a look at our 
-[open source site](http://opensource.amazingcow.com).
+Check our other Free Software repos and take a look at our 
+[free software site](http://www.amazingcow.com/floss).
+

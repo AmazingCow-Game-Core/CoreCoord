@@ -1,3 +1,17 @@
+| Version 0.3.x                                                                |
+================================================================================
+v0.3.0 - [Dev 04, 2017]
+-- General --
+    CoreCoord library, by just include CoreCoord/CoreCoord.h file.
+
+    Remove the old update script file, since now Amazing Cow has a separate
+    project to do just that. The new script file is just a wrapper around it.
+
+    Update the README to the new standard.
+
+    Make a lot of cosmetic changes on the code.
+
+
 ================================================================================
 | Version 0.2.x                                                                |
 ================================================================================
@@ -99,7 +113,7 @@ v0.2.8 - [Apr 30 2016]
     include/CoreCoord_Utils.h
         - Update version numbers.
 
-    include/Clock.h
+    include/Coord.h
         - Add more documentation to CTOR.
         - Fix typo.
 
